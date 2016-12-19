@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="jslib/bootstrap/css/bootstrap.min.css"></link>
+<link type="text/css" rel="stylesheet" href="jslib/easyui/default/easyui.css"></link>
+		
+<script type="text/javascript" src="jslib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="jslib/easyui/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="jslib/easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+<p>test</p>
+<table id="userTable"></table>
+<p>日志表</p>
+<table id="logTable"></table>
+</body>
+<script type="text/javascript">
+	var pathName = document.location.pathname;
+	var index = pathName.substr(1).indexOf("/");
+	var result = pathName.substr(0, index + 1);
+	var AppContextPath = result;
+</script>
+<script type="text/javascript">
+	$("#userTable").datagrid({
+		url : AppContextPath + "/user/queryUser",
+		loadMsg : '数据加载中,请稍后……',
+		rownumbers : true,
+		singleSelect : true,
+		height : 150,
+		//toolbar : '#toolbar',
+		columns : [ [ // 每个列具体内容
+		{
+			field : 'sid',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : 'sid',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'username',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : 'username',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'password',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : 'password',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		}
+		              
+		] ],
+		});
+	
+	$("#logTable").datagrid({
+		url : AppContextPath + "/aopLog/query",
+		loadMsg : '数据加载中,请稍后……',
+		rownumbers : true,
+		singleSelect : true,
+		height : 150,
+		//toolbar : '#toolbar',
+		columns : [ [ // 每个列具体内容
+		{
+			field : 'sid',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : 'sid',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'userid',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : 'userid',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'createdate',
+		  	width : 150,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : '创建时间',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'content',
+		  	width : 550,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : '日志内容',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		},
+		{
+			field : 'operation',
+		  	width : 250,
+		  	align : 'left',
+		  	sortable : true,
+		  	title : '描述',
+		  	editor : {//设置其为可编辑
+		  		type : 'text'
+		  	}
+		}
+		              
+		] ],
+		});
+	
+</script>
+
+</html>

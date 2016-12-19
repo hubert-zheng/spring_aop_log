@@ -1,0 +1,963 @@
+2016-12-18 02:34:07 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:34:07 [ localhost-startStop-1:181 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:34:07 CST 2016]; root of context hierarchy
+2016-12-18 02:34:07 [ localhost-startStop-1:243 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:34:08 [ localhost-startStop-1:955 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:34:08 [ localhost-startStop-1:983 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:34:08 [ localhost-startStop-1:992 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:34:09 [ localhost-startStop-1:1644 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:34:09 [ localhost-startStop-1:1710 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:34:09 [ localhost-startStop-1:1738 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:34:09 [ localhost-startStop-1:2631 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2623 ms
+2016-12-18 02:34:10 [ localhost-startStop-1:2838 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization started
+2016-12-18 02:34:10 [ localhost-startStop-1:2844 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'wechatcheck-servlet': startup date [Sun Dec 18 02:34:10 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:34:10 [ localhost-startStop-1:2846 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:34:10 [ localhost-startStop-1:3092 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:34:10 [ localhost-startStop-1:3441 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': Invocation of init method failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.velocity.VelocityConfigurer] for bean with name 'velocityConfig' defined in class path resource [springMVC-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.velocity.VelocityConfigurer] for bean with name 'velocityConfig' defined in class path resource [springMVC-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5033)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5317)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.velocity.VelocityConfigurer] for bean with name 'velocityConfig' defined in class path resource [springMVC-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1394)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:385)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:362)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:348)
+	at org.springframework.context.support.AbstractApplicationContext.getBeanNamesForType(AbstractApplicationContext.java:1051)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:119)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1189)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1558)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:247)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1317)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.ui.velocity.VelocityEngineFactory
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1713)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1558)
+	... 55 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [org.springframework.web.servlet.view.velocity.VelocityConfigurer] for bean with name 'velocityConfig' defined in class path resource [springMVC-servlet.xml]: problem with class file or dependent class; nested exception is java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1394)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:385)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:354)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:466)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1071)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:221)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:196)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:73)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5033)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5317)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/ui/velocity/VelocityEngineFactory
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1189)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1558)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:247)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1317)
+	... 44 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.ui.velocity.VelocityEngineFactory
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1713)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1558)
+	... 60 more
+2016-12-18 02:36:41 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:36:41 [ localhost-startStop-1:165 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:36:41 CST 2016]; root of context hierarchy
+2016-12-18 02:36:42 [ localhost-startStop-1:232 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:36:42 [ localhost-startStop-1:897 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:36:42 [ localhost-startStop-1:926 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:36:42 [ localhost-startStop-1:937 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:36:43 [ localhost-startStop-1:1588 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:36:43 [ localhost-startStop-1:1672 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:36:43 [ localhost-startStop-1:1717 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:36:44 [ localhost-startStop-1:2363 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2357 ms
+2016-12-18 02:36:44 [ localhost-startStop-1:2473 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization started
+2016-12-18 02:36:44 [ localhost-startStop-1:2479 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'wechatcheck-servlet': startup date [Sun Dec 18 02:36:44 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:36:44 [ localhost-startStop-1:2480 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:36:44 [ localhost-startStop-1:2766 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:36:46 [ localhost-startStop-1:4473 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:36:46 [ localhost-startStop-1:4495 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:36:46 [ localhost-startStop-1:4501 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:36:46 [ localhost-startStop-1:4506 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:36:46 [ localhost-startStop-1:4534 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:36:46 [ localhost-startStop-1:4767 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization completed in 2293 ms
+2016-12-18 02:38:18 [ http-bio-9090-exec-3:251629 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization started
+2016-12-18 02:38:19 [ http-bio-9090-exec-3:251634 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'wechatcheck-servlet': startup date [Sun Dec 18 02:38:19 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:38:19 [ http-bio-9090-exec-3:251635 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:38:19 [ http-bio-9090-exec-3:251758 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:38:20 [ http-bio-9090-exec-3:253543 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:38:20 [ http-bio-9090-exec-3:253571 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:38:20 [ http-bio-9090-exec-3:253579 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:38:20 [ http-bio-9090-exec-3:253584 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:38:20 [ http-bio-9090-exec-3:253611 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:38:21 [ http-bio-9090-exec-3:253850 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization completed in 2218 ms
+2016-12-18 02:39:21 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:39:21 [ localhost-startStop-1:146 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:39:21 CST 2016]; root of context hierarchy
+2016-12-18 02:39:21 [ localhost-startStop-1:210 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:39:22 [ localhost-startStop-1:929 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:39:22 [ localhost-startStop-1:963 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:39:22 [ localhost-startStop-1:973 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:39:23 [ localhost-startStop-1:1587 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:39:23 [ localhost-startStop-1:1642 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:39:23 [ localhost-startStop-1:1678 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:39:23 [ localhost-startStop-1:2325 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2319 ms
+2016-12-18 02:39:23 [ localhost-startStop-1:2431 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization started
+2016-12-18 02:39:23 [ localhost-startStop-1:2439 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'wechatcheck-servlet': startup date [Sun Dec 18 02:39:23 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:39:23 [ localhost-startStop-1:2441 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:39:24 [ localhost-startStop-1:2720 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:39:25 [ localhost-startStop-1:4251 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:39:25 [ localhost-startStop-1:4274 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:39:25 [ localhost-startStop-1:4279 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:39:25 [ localhost-startStop-1:4288 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:39:25 [ localhost-startStop-1:4314 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:39:26 [ localhost-startStop-1:4519 ] - [ INFO ] FrameworkServlet 'wechatcheck': initialization completed in 2087 ms
+2016-12-18 02:46:19 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:46:19 [ localhost-startStop-1:198 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:46:19 CST 2016]; root of context hierarchy
+2016-12-18 02:46:19 [ localhost-startStop-1:287 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:46:20 [ localhost-startStop-1:906 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:46:20 [ localhost-startStop-1:946 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:46:20 [ localhost-startStop-1:958 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:46:21 [ localhost-startStop-1:1719 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:46:21 [ localhost-startStop-1:1825 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:46:21 [ localhost-startStop-1:1884 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:46:22 [ localhost-startStop-1:2642 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2635 ms
+2016-12-18 02:46:22 [ localhost-startStop-1:2716 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 02:46:22 [ localhost-startStop-1:2721 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 02:46:22 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:46:22 [ localhost-startStop-1:2723 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:46:22 [ localhost-startStop-1:2978 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:46:22 [ localhost-startStop-1:3268 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 02:46:23 [ localhost-startStop-1:4246 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:46:23 [ localhost-startStop-1:4261 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:46:23 [ localhost-startStop-1:4264 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:46:23 [ localhost-startStop-1:4268 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:46:23 [ localhost-startStop-1:4284 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:46:24 [ localhost-startStop-1:4431 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 1714 ms
+2016-12-18 02:51:17 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:51:17 [ localhost-startStop-1:159 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:51:17 CST 2016]; root of context hierarchy
+2016-12-18 02:51:17 [ localhost-startStop-1:214 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:51:18 [ localhost-startStop-1:730 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:51:18 [ localhost-startStop-1:753 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:51:18 [ localhost-startStop-1:761 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:51:18 [ localhost-startStop-1:1312 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:51:18 [ localhost-startStop-1:1364 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:51:18 [ localhost-startStop-1:1410 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:51:19 [ localhost-startStop-1:2025 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2018 ms
+2016-12-18 02:51:19 [ localhost-startStop-1:2122 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 02:51:19 [ localhost-startStop-1:2126 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 02:51:19 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:51:19 [ localhost-startStop-1:2128 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:51:20 [ localhost-startStop-1:2473 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:51:20 [ localhost-startStop-1:2786 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 02:51:21 [ localhost-startStop-1:3886 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:51:21 [ localhost-startStop-1:3942 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:51:21 [ localhost-startStop-1:3955 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:51:21 [ localhost-startStop-1:3960 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:51:21 [ localhost-startStop-1:3984 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:51:21 [ localhost-startStop-1:4148 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 2025 ms
+2016-12-18 02:52:47 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:52:47 [ localhost-startStop-1:143 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:52:47 CST 2016]; root of context hierarchy
+2016-12-18 02:52:47 [ localhost-startStop-1:209 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:52:48 [ localhost-startStop-1:785 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:52:48 [ localhost-startStop-1:809 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:52:48 [ localhost-startStop-1:818 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:52:48 [ localhost-startStop-1:1344 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:52:48 [ localhost-startStop-1:1396 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:52:48 [ localhost-startStop-1:1448 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:52:49 [ localhost-startStop-1:2119 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2113 ms
+2016-12-18 02:52:49 [ localhost-startStop-1:2229 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 02:52:49 [ localhost-startStop-1:2235 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 02:52:49 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:52:49 [ localhost-startStop-1:2236 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:52:50 [ localhost-startStop-1:2527 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:52:50 [ localhost-startStop-1:2867 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 02:52:51 [ localhost-startStop-1:3961 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:52:51 [ localhost-startStop-1:4007 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:52:51 [ localhost-startStop-1:4013 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:52:51 [ localhost-startStop-1:4018 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:52:51 [ localhost-startStop-1:4043 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:52:51 [ localhost-startStop-1:4199 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 1969 ms
+2016-12-18 02:55:39 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:55:39 [ localhost-startStop-1:180 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:55:39 CST 2016]; root of context hierarchy
+2016-12-18 02:55:39 [ localhost-startStop-1:261 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:55:40 [ localhost-startStop-1:832 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:55:40 [ localhost-startStop-1:857 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:55:40 [ localhost-startStop-1:867 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:55:41 [ localhost-startStop-1:1394 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:55:41 [ localhost-startStop-1:1448 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:55:41 [ localhost-startStop-1:1483 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:55:41 [ localhost-startStop-1:2053 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2045 ms
+2016-12-18 02:55:41 [ localhost-startStop-1:2240 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 02:55:41 [ localhost-startStop-1:2283 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 02:55:41 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:55:41 [ localhost-startStop-1:2285 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:55:42 [ localhost-startStop-1:2742 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:55:42 [ localhost-startStop-1:3105 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 02:55:43 [ localhost-startStop-1:4313 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:55:44 [ localhost-startStop-1:4373 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:55:44 [ localhost-startStop-1:4383 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:55:44 [ localhost-startStop-1:4390 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:55:44 [ localhost-startStop-1:4408 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:55:44 [ localhost-startStop-1:4560 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 2282 ms
+2016-12-18 02:57:48 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 02:57:48 [ localhost-startStop-1:156 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 02:57:48 CST 2016]; root of context hierarchy
+2016-12-18 02:57:49 [ localhost-startStop-1:228 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 02:57:49 [ localhost-startStop-1:842 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 02:57:49 [ localhost-startStop-1:874 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 02:57:49 [ localhost-startStop-1:887 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:57:50 [ localhost-startStop-1:1478 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 02:57:50 [ localhost-startStop-1:1536 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 02:57:50 [ localhost-startStop-1:1586 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 02:57:50 [ localhost-startStop-1:2150 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2138 ms
+2016-12-18 02:57:51 [ localhost-startStop-1:2245 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 02:57:51 [ localhost-startStop-1:2252 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 02:57:51 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 02:57:51 [ localhost-startStop-1:2255 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 02:57:51 [ localhost-startStop-1:2527 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 02:57:51 [ localhost-startStop-1:2818 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 02:57:52 [ localhost-startStop-1:3970 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 02:57:52 [ localhost-startStop-1:4026 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 02:57:52 [ localhost-startStop-1:4038 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 02:57:52 [ localhost-startStop-1:4047 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 02:57:52 [ localhost-startStop-1:4067 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 02:57:53 [ localhost-startStop-1:4227 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 1982 ms
+2016-12-18 03:11:27 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 03:11:28 [ localhost-startStop-1:288 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 03:11:28 CST 2016]; root of context hierarchy
+2016-12-18 03:11:28 [ localhost-startStop-1:377 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 03:11:29 [ localhost-startStop-1:1167 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 03:11:29 [ localhost-startStop-1:1218 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 03:11:29 [ localhost-startStop-1:1235 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 03:11:29 [ localhost-startStop-1:2095 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 03:11:30 [ localhost-startStop-1:2154 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 03:11:30 [ localhost-startStop-1:2196 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 03:11:30 [ localhost-startStop-1:2885 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2876 ms
+2016-12-18 03:11:30 [ localhost-startStop-1:2994 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 03:11:30 [ localhost-startStop-1:3002 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 03:11:30 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 03:11:30 [ localhost-startStop-1:3003 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 03:11:31 [ localhost-startStop-1:3321 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 03:11:31 [ localhost-startStop-1:3665 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 03:11:32 [ localhost-startStop-1:4756 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 03:11:32 [ localhost-startStop-1:4816 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 03:11:32 [ localhost-startStop-1:4826 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 03:11:32 [ localhost-startStop-1:4835 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 03:11:32 [ localhost-startStop-1:4860 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 03:11:32 [ localhost-startStop-1:5055 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 2061 ms
+2016-12-18 03:14:21 [ localhost-startStop-1:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 03:14:22 [ localhost-startStop-1:170 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 03:14:22 CST 2016]; root of context hierarchy
+2016-12-18 03:14:22 [ localhost-startStop-1:232 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 03:14:23 [ localhost-startStop-1:1165 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 03:14:23 [ localhost-startStop-1:1226 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 03:14:23 [ localhost-startStop-1:1241 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 03:14:23 [ localhost-startStop-1:1885 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 03:14:23 [ localhost-startStop-1:1950 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 03:14:23 [ localhost-startStop-1:1995 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 03:14:24 [ localhost-startStop-1:2576 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2568 ms
+2016-12-18 03:14:24 [ localhost-startStop-1:2662 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 03:14:24 [ localhost-startStop-1:2668 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 03:14:24 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 03:14:24 [ localhost-startStop-1:2671 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 03:14:25 [ localhost-startStop-1:3029 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 03:14:25 [ localhost-startStop-1:3372 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 03:14:26 [ localhost-startStop-1:4797 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 03:14:26 [ localhost-startStop-1:4853 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 03:14:26 [ localhost-startStop-1:4857 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 03:14:26 [ localhost-startStop-1:4863 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 03:14:26 [ localhost-startStop-1:4884 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 03:14:27 [ localhost-startStop-1:5029 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 2367 ms
+2016-12-18 19:56:50 [ localhost-startStop-1:1 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-12-18 19:56:50 [ localhost-startStop-1:199 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sun Dec 18 19:56:50 CST 2016]; root of context hierarchy
+2016-12-18 19:56:51 [ localhost-startStop-1:290 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-12-18 19:56:51 [ localhost-startStop-1:868 ] - [ WARN ] No MyBatis mapper was found in '[com.hubert.dao]' package. Please check your configuration.
+2016-12-18 19:56:51 [ localhost-startStop-1:905 ] - [ INFO ] Loading properties file from class path resource [config.properties]
+2016-12-18 19:56:51 [ localhost-startStop-1:916 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 19:56:52 [ localhost-startStop-1:1515 ] - [ ERROR ] maxIdle is deprecated
+2016-12-18 19:56:52 [ localhost-startStop-1:1575 ] - [ WARN ] Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:50)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:944)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:632)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1017)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-18 19:56:52 [ localhost-startStop-1:1624 ] - [ INFO ] {dataSource-1} inited
+2016-12-18 19:56:53 [ localhost-startStop-1:2285 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2277 ms
+2016-12-18 19:56:53 [ localhost-startStop-1:2384 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization started
+2016-12-18 19:56:53 [ localhost-startStop-1:2391 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring_aop_log-servlet': startup date [Sun Dec 18 19:56:53 CST 2016]; parent: Root WebApplicationContext
+2016-12-18 19:56:53 [ localhost-startStop-1:2394 ] - [ INFO ] Loading XML bean definitions from class path resource [springMVC-servlet.xml]
+2016-12-18 19:56:53 [ localhost-startStop-1:2651 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-18 19:56:53 [ localhost-startStop-1:2955 ] - [ INFO ] Mapped "{[//index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.hubert.controller.IndexController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-18 19:56:54 [ localhost-startStop-1:4088 ] - [ INFO ] Mapped URL path [/index] onto handler 'findJsp'
+2016-12-18 19:56:54 [ localhost-startStop-1:4146 ] - [ INFO ] Mapped URL path [/bootstrap/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-12-18 19:56:54 [ localhost-startStop-1:4157 ] - [ INFO ] Mapped URL path [/js/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2016-12-18 19:56:54 [ localhost-startStop-1:4163 ] - [ INFO ] Mapped URL path [/image/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2016-12-18 19:56:54 [ localhost-startStop-1:4184 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-12-18 19:56:55 [ localhost-startStop-1:4380 ] - [ INFO ] FrameworkServlet 'spring_aop_log': initialization completed in 1995 ms
